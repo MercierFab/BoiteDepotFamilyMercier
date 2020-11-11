@@ -1,5 +1,23 @@
-p
+/* fichier CSS qui accompagne index.html
+créé le 11 Novembre 2020 par F.Mercier */
+em
 {
     background-color: yellow;
+    color: red;
 }
 
+h1 /*je veux le titre encadé centré*/
+{
+	color:black;
+	font-style:verdana;
+	border: 3px blue double;
+	text-align: center;
+}
+
+body /*je veux Zozor en haut à droite sous le titre*/
+{
+	background: url("zozor.png") no-repeat 1000px 300px fixed;
+	background-color: rgba(218,235,234, 0.8);
+
+}
+img { float: left; }
