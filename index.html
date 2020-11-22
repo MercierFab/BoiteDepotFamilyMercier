@@ -1,55 +1,118 @@
 <!DOCTYPE html>
+<!-- Site familymercier.com commencé le 7 novembre 2020 par Fabrice Mercier
+L'objectif est purement pédagogique  --> 
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Page 1 - FamilyMercier</title>
+        <link rel="stylesheet" href="stylePourFamilyMercier.css" />
+        <title>FamilyMercier.com</title>
     </head>
 
     <body>
-
-        <h1>Mon super site</h1>
-        <h2>qui prend forme</h2>
-        <a href="#mon_ancre">Aller vers l'ancre</a>
+        <div id="blocPage"> <!-- Le bloc principal (main_wrapper) qui englobe l'ensemble de la page, permettra de centrer la page-->
+            <header>
+                <div id="titrePrincipal">
+                    <div id="logo">
+                        <img src="logoF.png" alt="logo F" width="50" height="50">
+                        <a href="MercierFamily.com">MercierFamily.com</a>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="page1.html">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">...</a></li>
+                    </ul>
+                </nav>
+            </header>
         
-        <p>Bonjour et bienvenue sur mon site !</p>
-        <p>Pour le moment, mon site est un peu <em>vide</em>. 
-            <br /> Patientez encore un <strong> peu !</strong></p>
-
-        <h2>Mon objectif est de : </h2>
-
-        <ol>
-            <li>mettre en forme et le rendre dynamique</li>
-            <li>adapter la page en fonction de l'écran</li>
-            <li>remonter des infos depuis une base de données</li>
-            <li>faire un lien vers un doc qui se trouve sur un serveur</li>
-            <li>et après on verra ;o </li>
-
-            <p>Pour accéder à <a href="page2.html" title="c'est ici qu'il faut cliquer">la page 2</a> ! </p>
-
-        </ol>
-
-        <!-- 
-        <figure> 
-            <img src="zozor.png" alt="zozor" />
-            <figcaption>capture de zozor</figcaption>
-        </figure>
-        -->
-
-        <p>
-            <img src="montagne.png" alt="photo de montagne" title="apparait au survol">
-        </p>
+            <div id="banniere_image">
+                <div id="bannier_description">
+                    Les Belledonnes
+                    <a href="#" class="bouton_rouge">wiki 
+                        <img src="flecheblanchedroite.png" alt=""/></a>
+                </div>
+            </div>
         
+            <section><!-- Section 2 je suis un grand voyageur-->    
+                <article>
+                
+                    <h1><img src="logoV.png" alt="logo V" width="50" height="50" class="ico_categorie" />Je suis un grand voyageur</h1>
 
+                    <p>Blabla de la section 2 . blablabla   bla mmmmmmmmm bbbbbbb rerthrghfh lkelaeer iueurhgkeairura regherg erfoirij djiuzf gueorgkaer gerjgeajgj regajghkerh gjh gjjhgerugh rgjo gaergjaap egjgouhgaojlrjgpi rrghougo fjrhgohghf ncbvjgvayf&tgaehgoivà(i jejgogoaeg riggoginrgooerj kgegjotaprhhrj ldgjreuyou ljglezeu' dkhfurgg ghayryt&"jg erjggh</p>
+                    <p>Blabla de la section 2 . blablabla   bla mmmmmmmmm bbbbbbb rerthrghfh lkelaeer iueurhgkeairura regherg erfoirij djiuzf gueorgkaer gerjgeajgj regajghkerh gjh gjjhgerugh rgjo gaergjaap egjgouhgaojlrjgpi rrghougo fjrhgohghf ncbvjgvayf&tgaehgoivà(i jejgogoaeg riggoginrgooerj kgegjotaprhhrj ldgjreuyou ljglezeu' dkhfurgg ghayryt&"jg erjggh</p>
+                    <p>Blabla de la section 2 . blablabla   bla mmmmmmmmm bbbbbbb rerthrghfh lkelaeer iueurhgkeairura regherg erfoirij djiuzf gueorgkaer gerjgeajgj regajghkerh gjh gjjhgerugh rgjo gaergjaap egjgouhgaojlrjgpi rrghougo fjrhgohghf ncbvjgvayf&tgaehgoivà(i jejgogoaeg riggoginrgooerj kgegjotaprhhrj ldgjreuyou ljglezeu' dkhfurgg ghayryt&"jg erjggh
+                    </p>
+                    
 
-        <!-- pour l'instant l'auteur ne s'affiche pas mais j'ai bon espoir d'y arriver un jour -->
-        <citation auteur="Neil Armstrong" date="21/07/1969">
-        C'est un petit pas pour l'homme, mais un bond de géant pour l'humanité.
-        </citation>
-
-        <h2 id="mon_ancre">L'ancre arrive ici</h2>
-        <h2>Alors pas de panique, ça arrive! </h2>
-
-
+                </article>
+                <aside>
+                    <h1>À propos de l'auteur</h1>
+                    <img src="bulle.png" alt="" id="fleche_bulle" />
+                    <p id="photo_zozor">
+                        <img src="zozor.png" alt="Photo de zozor"/>
+                    </p>
+                    <p>Laissez moi
+                     le temps de me présenter : je m'apelle zozor, je suis né le 23 novembre 1965.</p>
+                    <p>vous savez tout sur moi</p>
+                    <!--
+                    <p><img src="facebook.png" alt="Facebook" /><img src="images/twitter.png" alt="Twitter" /><img src="images/vimeo.png" alt="Vimeo" /><img src="images/flickr.png" alt="Flickr" /><img src="images/rss.png" alt="RSS" /></p>-->
+                </aside>
+            </section>
+        
+            <footer>
+                <div id="miseAjour">
+                    <p>Dernière mise à jour <br/>le 22 novembre 2020<br />
+                    <a href="#">Me contacter !</a></p>
+                </div>
+                <div id="mes_photos">
+                    <h1>Mes photos</h1>
+                    <p>
+                        <img src="photo1.jpeg" alt="logo V" width="100" height="100" class="mesPhotos" />
+                        <img src="photo2mini.jpeg" href="photos/photo2full.jpeg" alt="logo V" width="100" height="100" class="mesPhotos" />
+                        <img src="photo3mini.jpeg" alt="logo V" width="100" height="100" class="mesPhotos" />
+                        <img src="photo4mini.jpeg" alt="logo V" width="100" height="100" class="mesPhotos" />
+                    </p>    
+                    
+                </div>
+                <div id="Recommandes"> <!-- = mes_amis -->
+                    <h1>Sites recommandés</h1>
+                    <div id="listeSites"> <!-- = listes_amis -->
+                        <ul>    
+                            <li><a href="#">site1</a></li>
+                            <li><a href="#">site2</a></li>
+                            <li><a href="#">site3</a></li>
+                            <li><a href="#">site4</a></li>    
+                        </ul>
+                        <ul>
+                            <li><a href="#">site5</a></li>
+                            <li><a href="#">site6</a></li>
+                            <li><a href="#">site7</a></li>
+                            <li><a href="#">site8</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
