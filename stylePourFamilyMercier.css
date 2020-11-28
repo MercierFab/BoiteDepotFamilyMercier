@@ -5,7 +5,7 @@ créé le 11 Novembre 2020 par F.Mercier */
 /* ici commence le style pour la nouvelle version de familyMercier.com */
 body
 {
-background: url('photos/fond_jaune.png');
+background: url('images/fond_jaune.png');
 font-family: 'montserratmedium', arial, sans-serif;
 color: #181818;
 }
@@ -16,10 +16,12 @@ color: #181818;
 	margin: auto;
 }
 
+
+
 @font-face {
     font-family: 'montserratmedium';
-    src: url('polices/montserrat-medium-webfont.woff2') format('woff2'),
-         url('polices/montserrat-medium-webfont.woff') format('woff');
+    src: url('fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -32,7 +34,7 @@ section h1, footer h1, nav a
 
 header
 {
-	background: url('photos/separateur.png') repeat-x bottom;
+	background: url('images/separateur.png') repeat-x bottom;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -53,8 +55,8 @@ header
 
 header h1
 {
-    font-family: 'montserratmedium', serif;
-    font-size: 2.5em;
+    font-family: montserratmedium, serif;
+    font-size: 1.8em;
     font-weight: normal;
     margin: 0 0 0 10px;
 }
@@ -67,7 +69,7 @@ header h2
     font-weight: normal;
 }
 
-/* mise en forme du mesu en haut à droite */
+/* mise en forme du menu en haut à droite */
 
 nav ul
 {
@@ -100,7 +102,7 @@ nav a:hover
 	margin-top: 15px;
 	height: 200px;
 	border-radius: 5px;
-	background: url('photos/montagne.png') no-repeat;
+	background: url('images/montagne.png') no-repeat;
 	background-size: 100%;
 	/*background-size: 100%;*/
 	position: relative;
@@ -128,7 +130,7 @@ nav a:hover
 	position: absolute;
     right: 5px;
     bottom: 5px;
-    background: url('photos/fond_degraderouge.png') repeat-x;
+    background: url('images/fond_degraderouge.png') repeat-x;
     border: 1px solid #760001;
     border-radius: 5px;
     font-size: 1em;
@@ -165,6 +167,11 @@ article
 	margin-right: 8px;
 }
 
+.imageflottante 
+{
+float: left;
+margin-right: 10px;
+}
 
 article p
 {
@@ -209,9 +216,9 @@ footer
 {
 	display: flex;
 	background: 
-	url('photos/ico_top.png') no-repeat top center, 
-	url('photos/separateur.png') repeat-x top,
-	url('photos/ombre.png') repeat-x top;
+	url('images/ico_top.png') no-repeat top center, 
+	url('images/separateur.png') repeat-x top,
+	url('images/ombre.png') repeat-x top;
 }
 
 footer p, footer ul
@@ -256,7 +263,7 @@ footer h1
 
 #Recommandes ul
 {
-	list-style-image: url('photos/ico_liensexterne.png');
+	list-style-image: url('images/ico_liensexterne.png');
 	padding-left: 2px;
 }
 
@@ -266,9 +273,85 @@ footer h1
 	color: #760001;
 }
 
+.boiteTrad 
+{
+	width: 200px;
+	height: 250px;
+}
 
+/* actions si la fenêtre est inférieure à 1024 */
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+	{
+		width:auto;
+	}
 
+    #banniere_image
+    {
+        display: none;
+    }
 
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+    section
+    {
+        flex-direction: column;
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+    
+    #fleche_bulle
+    {
+        display: none;
+    }
+    
+    #photo_zozor img
+    {
+        width: 110px;
+        float: right;
+        margin-left: 15px;
+    }
+    
+    aside p:last-child
+    {
+        text-align: center;
+    }
+}
+
+#footP2 
+{
+	position: relative;
+    top: 0;
+    left: 100px;
+}
 
 
 
